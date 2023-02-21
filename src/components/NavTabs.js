@@ -8,10 +8,10 @@ function NavTabs({ currentPage, handlePageChange }) {
   return (
     <>
       <Navbar bg="success" variant="dark">
-        <Container>
-          <Navbar.Brand size="lg" href="#aboutme" onClick={() => handlePageChange('AboutMe')}
+        <Container style={{fontSize: '2.2rem'}}>
+          <Navbar.Brand style={{fontSize: '4rem'}} href="#aboutme" onClick={() => handlePageChange('AboutMe')}
           className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}> Jordan Gibbs </Navbar.Brand>
-          <Nav className="me-auto">
+          <Nav className="m-3">
             <Nav.Link href="#resume"
           onClick={() => handlePageChange('Resume')}
           className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}>Resume</Nav.Link>

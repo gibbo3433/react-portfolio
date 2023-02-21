@@ -4,9 +4,16 @@ import Card from 'react-bootstrap/Card';
 
 
 export default function MakeCard() {
-  return (
 
-    
+  // const 
+
+
+
+
+
+
+  return (
+ 
     <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src="holder.js/100px180" />
       <Card.Body>
@@ -21,3 +28,20 @@ export default function MakeCard() {
   );
 }
 
+// function RenderCard(card, index) {
+//   return (
+//     <Card key={index}>
+//       <Card.Img variant="top" src={card.image} />
+//       <Card.Body>
+//         <Card.Title>{card.title}</Card.Title>
+//         <Card.Text>
+//          {card.text}
+//         </Card.Text>
+//         <Button href={card.gitHub} className="card-button" variant="primary">Visit Repo</Button>
+//       </Card.Body>
+//     </Card>
+//   );
+// }
+// return <div className="grid">{cardInfo.map(RenderCard)}</div>;
+
+// }

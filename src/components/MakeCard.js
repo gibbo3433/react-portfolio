@@ -5,36 +5,59 @@ import Card from 'react-bootstrap/Card';
 
 export default function MakeCard() {
 
+  const Repos = [
+
+    { title: "Tech-Blog Platform",
+      picture: "https://tradebrains.in/wp-content/uploads/2021/09/8-Best-Indian-Stock-Market-Blogs-cover-image.jpg",
+      github: "https://github.com/gibbo3433/Tech-Blog-Platform",
+      text: "A full stack blog using handlebars with SQL to provide users with a blog to write their own posts.",
+    },
+
+    { title: "Employee Tracker",
+      picture: "https://st4.depositphotos.com/1001599/39398/v/600/depositphotos_393980448-stock-illustration-time-and-attendance-tracking-system.jpg",
+      github: "https://github.com/gibbo3433/employee-tracker",
+      text: "A back end application to add, update and delete employees."
+    },
+
+    { title: "Note Taker",
+      picture: "https://us.123rf.com/450wm/thesodium28/thesodium282202/thesodium28220200414/182509833-cropped-image-of-woman-hand-taking-notes-at-the-wooden-table-surrounded-by-a-computer-monitor-wirele.jpg?ver=6",
+      github: "https://github.com/gibbo3433/express.js---note-taker",
+      text: "An application that records and stores notes for future reference.",
+    },
+
+    { title: "What's for dinner?",
+      picture: "https://reviewed-com-res.cloudinary.com/image/fetch/s--TFkJ6AH1--/b_white,c_fill,cs_srgb,f_auto,fl_progressive.strip_profile,g_auto,h_972,q_auto,w_972/https://reviewed-production.s3.amazonaws.com/1620222407571/aapiownedfoodbiz.png",
+      github: "https://github.com/gibbo3433/What-s-For-Dinner-",
+      text: "This can find numerous recipies depending on what items of food you have in your house.",
+    },
+
+    { title: "Weather Dashboard",
+      picture: "https://img.freepik.com/premium-vector/abstract-technology-ui-futuristic-concept-hud-world-interface-hologram_36402-132.jpg",
+      github: "https://github.com/gibbo3433/weather-dashboard",
+      text: "An application that shows the weekly weather forecast on a city of your choosing.",
+    },
+
+    { title: "Password Generator",
+      picture: "https://vpnpick.com/wp-content/uploads/2020/09/password-generator.jpg",
+      github: "https://github.com/gibbo3433/Week-3-password-generator",
+      text: "This application creates a unique password according to what characters have been selected.",
+    },]
+
+  function CreateCard (card, index) {
     return (
- 
-    <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
-      <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
-      </Card.Body>
-    </Card>
-  );
+      <Card key={index} style={{ width: '100%', maxWidth: '30rem', margin: '.5rem' }}>
+          
+        <Card.Body>
+          <Card.Title>{card.title}</Card.Title>
+          <Card.Img variant="top" src={card.picture} style={{ height: '200px', objectFit: 'cover' }}/>
+          <Card.Text>
+            {card.text}
+          </Card.Text>
+          <Button href={card.github} variant="primary">Github Page</Button>
+        </Card.Body>
+      </Card>
+    );
+  }
+  return <div className='grid' style={{ margin: '.5rem auto', display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'center' }}> {Repos.map(CreateCard)}</div>;
 }
 
-// function RenderCard(card, index) {
-//   return (
-//     <Card key={index}>
-//       <Card.Img variant="top" src={card.image} />
-//       <Card.Body>
-//         <Card.Title>{card.title}</Card.Title>
-//         <Card.Text>
-//          {card.text}
-//         </Card.Text>
-//         <Button href={card.gitHub} className="card-button" variant="primary">Visit Repo</Button>
-//       </Card.Body>
-//     </Card>
-//   );
-// }
-// return <div className="grid">{cardInfo.map(RenderCard)}</div>;
-
-// }

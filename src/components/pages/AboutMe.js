@@ -6,57 +6,27 @@ import Card from 'react-bootstrap/Card';
 export default function AboutMe() {
   return (
     <>
-    <Card style={{ display: 'flex', flexDirection: 'row' }}>
+    <Card style={{ display: 'flex', flexDirection: 'row', margin: '5rem',}}>
 
-    <Card.Img variant="top" src="https://pbs.twimg.com/media/EzBLojZXAAIeey4?format=jpg&name=900x900" alt="monkey" style={{ width: '400px', height: '500px'}}  />
+    <Card.Img variant="top" src="https://pbs.twimg.com/media/EzBLojZXAAIeey4?format=jpg&name=900x900" alt="monkey" style={{ width: '400px', height: '500px', padding: 12}}  />
      
-    <Accordion defaultActiveKey="0" flush style={{ flex: 'no-wrap' }}>
-        <Accordion.Item eventKey="0">
-        <Accordion.Header>Accordion Item #1</Accordion.Header>
+    <Accordion>
+        <Accordion.Item eventKey="0" style={{ backgroundColor: 'lightblue' }}>
+        <Accordion.Header style={{ backgroundColor: 'lightblue' }} >About me</Accordion.Header>
         <Accordion.Body>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          Hi, my names Jordan, but you can call me Gibbo. I'm currently a student learning how to code and this is my first shot at a react portfolio!
         </Accordion.Body>
       </Accordion.Item>
-      <Accordion.Item eventKey="1">
-        <Accordion.Header>Accordion Item #2</Accordion.Header>
+      <Accordion.Item eventKey="1" style={{ backgroundColor: 'lightblue' }} >
+        <Accordion.Header>Coding Journey</Accordion.Header>
         <Accordion.Body>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          So far, I have been coding for just over six months now and have nearly completed my course here at Birmingham University. I have learnt so many news and exciting tools to help me on my journey of becoming a developer!
         </Accordion.Body>
       </Accordion.Item>
-      <Accordion.Item eventKey="2">
-        <Accordion.Header>Accordion Item #3</Accordion.Header>
+      <Accordion.Item eventKey="2" style={{ backgroundColor: 'lightblue' }} >
+        <Accordion.Header>Hobbies and Interests</Accordion.Header>
         <Accordion.Body>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </Accordion.Body>
-      </Accordion.Item>
-      <Accordion.Item eventKey="3">
-        <Accordion.Header>Accordion Item #4</Accordion.Header>
-        <Accordion.Body>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          I have a wide selection of hobbies. First, I play lots of sports in my spare time such as tennis, football and mixed netball. Other interests include playing competitive Magic: The Gathering across the UK and playing video games such as The Witcher and Halo.
         </Accordion.Body>
       </Accordion.Item>
     </Accordion>

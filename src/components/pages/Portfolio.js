@@ -1,14 +1,15 @@
 import React from 'react';
+import MakeCard from '../MakeCard';
 
 export default function Portfolio() {
   return (
-    <div>
-      <h1>Portfolio</h1>
-      <p>
-        ive done things, trust me bro
-      </p>
+
+
+<div>
       
-    </div>
+<MakeCard />
+      
+</div> 
     
   );
 }

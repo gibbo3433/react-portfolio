@@ -5,7 +5,7 @@ export default function Portfolio() {
     <div>
       <h1>Portfolio</h1>
       <p>
-        Test.
+        ive done things, trust me bro
       </p>
       
     </div>

@@ -1,3 +1,5 @@
+// These imports allow my app to use React and React-bootstrap to build and style my portfolio
+
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";

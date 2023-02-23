@@ -3,6 +3,11 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 
+// This is where my Nav bar is created
+// Each Navbar.Brand has its own unique href for each of the pages in my directory
+// Onclick starts the handlePageChange fucnction which makes it so each Navbar.Brand can move between each other
+// this className makes suret that when we arrive on the chosen page, if correct, makes the links between each page continue to work
+
 function NavTabs({ currentPage, handlePageChange }) {
   return (
     <>
@@ -14,8 +19,7 @@ function NavTabs({ currentPage, handlePageChange }) {
             onClick={() => handlePageChange("AboutMe")}
             className={currentPage === "Home" ? "nav-link active" : "nav-link"}
           >
-            {" "}
-            Jordan Gibbs{" "}
+            Jordan Gibbs
           </Navbar.Brand>
           <Nav className="m-3">
             <Nav.Link
@@ -30,7 +34,6 @@ function NavTabs({ currentPage, handlePageChange }) {
             <Nav.Link
               href="#portfolio"
               onClick={() => handlePageChange("Portfolio")}
-              // Check to see if the currentPage is `Blog`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
               className={
                 currentPage === "Portfolio" ? "nav-link active" : "nav-link"
               }
@@ -40,7 +43,6 @@ function NavTabs({ currentPage, handlePageChange }) {
             <Nav.Link
               href="#contact"
               onClick={() => handlePageChange("Contact")}
-              // Check to see if the currentPage is `Contact`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
               className={
                 currentPage === "Contact" ? "nav-link active" : "nav-link"
               }

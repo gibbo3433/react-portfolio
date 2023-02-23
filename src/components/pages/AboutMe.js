@@ -2,6 +2,9 @@ import React from "react";
 import Accordion from "react-bootstrap/Accordion";
 import Card from "react-bootstrap/Card";
 
+// this function creates the card which holds the accordion and image for my main page
+// the card image holds my photo
+// the accordion holds my about me information in seperate parts
 export default function AboutMe() {
   return (
     <>
@@ -13,7 +16,6 @@ export default function AboutMe() {
           alt="monkey"
           style={{ width: "400px", height: "500px", padding: 12 }}
         />
-
         <Accordion>
           <Accordion.Item eventKey="0" style={{ backgroundColor: "lightblue" }}>
             <Accordion.Header style={{ backgroundColor: "lightblue" }}>

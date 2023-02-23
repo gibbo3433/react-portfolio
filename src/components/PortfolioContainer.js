@@ -1,3 +1,4 @@
+// Here is my components where i have imported them into my main Portfolio container
 import React, { useState } from "react";
 import NavTabs from "./NavTabs";
 import AboutMe from "./pages/AboutMe";
@@ -5,6 +6,9 @@ import Resume from "./pages/Resume";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import Footer from "./Footer";
+
+// Render page makes it so my function can return the specific component it is told to find
+// The useSate show my original 'Read' page as AboutMe and then allows 'Write' to occur if the function is called to replace it
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState("AboutMe");

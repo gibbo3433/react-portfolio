@@ -2,6 +2,11 @@ import React from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 
+// This component maps out my Repos const and then creates each of using CreateCard and then renders them into a Card inside a div which has the 'grid' stlying
+// Each Repo contains its title, picture, text, github and deployed page (deployed page only shown if application can be deployed through github)
+// The CreateCard function takes the Repos and uss props to show each element in the correct place where specified 
+// I have styled the grid at the end so that each card will not overlap and each element looks aesthetically pleasing
+
 export default function MakeCard() {
   const Repos = [
     {

@@ -3,6 +3,9 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 
+// This is my footer which generates on all pages of my portfoiio
+// Each nav.link inludes a src which shows an image (e.g github) which then holds the href to my own github page. I have done this for my twitter and facebook too
+
 export default function Footer() {
   return (
     <>

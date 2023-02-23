@@ -3,6 +3,10 @@ import Container from "react-bootstrap/Container";
 import ListGroup from "react-bootstrap/ListGroup";
 import Button from "react-bootstrap/Button";
 
+// At the start of my Resume I have shown all of my different proficiencies for potential clients to see
+// I have then mapped these out below in the listgroup.map area to set them in a list
+// Additionally, i have added my resume in a href inside a button which will allow my future clients to download my resume
+
 export default function Resume() {
   const proficiencies = [
     "HTML",

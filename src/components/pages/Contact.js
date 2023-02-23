@@ -2,6 +2,9 @@ import React from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 
+// this form holds all of my different inputs if someone would like to get in touch with me
+// I have personally styled all of the form to make it more appealing
+// Adding required to form control makes it so that it sends the user a message telling them that they need to include something in the field before submitting
 export default function Contact() {
   return (
     <Form

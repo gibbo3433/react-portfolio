@@ -1,8 +1,8 @@
 {
+  "homepage": "https://gibbo3433.github.io/react-portfolio",
   "name": "react-portfolio",
   "version": "0.1.0",
-  "private": true,
-  "homepage": "https://gibbo3433.github.io/react-portfolio",
+  "private": true,  
   "dependencies": {
     "bootstrap": "^5.2.3",
     "gh-pages": "^5.0.0",
